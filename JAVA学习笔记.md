@@ -76,13 +76,12 @@ Java是一门面向对象编程语言, 既是解释型语言也是编译型, 静
 ## Java 第一个代码
 
 ```java
-    public class Test {
-        //
-        public static void main(String[] args) {
-            // args 这个参数用于脚本传参
-        System.out.println("Hello World!");
-        }
-    }
+public class Test {
+	public static void main(String[] args) {
+		// args 这个参数用于脚本传参
+		System.out.println("Hello World!");
+	}
+}
 ```
 
 // 代码先按照这个模板写, 上面的所有东西会慢慢解释
@@ -6093,9 +6092,9 @@ Java专门用于正则表达式的包:
 
 
 
-## Matcher 类的方法
+#### Matcher 类的方法
 
-## 索引方法
+##### 索引方法
 
 索引方法提供了有用的索引值，精确表明输入字符串中在哪能找到匹配：
 
@@ -6106,7 +6105,7 @@ Java专门用于正则表达式的包:
 | public int end()          | 返回最后匹配字符之后的偏移量。                               |
 | public int end(int group) | 返回在以前的匹配操作期间，由给定组所捕获子序列的最后字符之后的偏移量。 |
 
-## 查找方法
+##### 查找方法
 
 查找方法用来检查输入字符串并返回一个布尔值，表示是否找到该模式：
 
@@ -6117,7 +6116,7 @@ Java专门用于正则表达式的包:
 | boolean find(int start） | 重置此匹配器，然后尝试查找匹配该模式、从指定索引开始的输入序列的下一个子序列。 |
 | boolean matches()        | 尝试将整个区域与模式匹配。                                   |
 
-## 替换方法
+##### 替换方法
 
 替换方法是替换输入字符串里文本的方法：
 
